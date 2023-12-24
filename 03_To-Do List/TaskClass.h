@@ -11,6 +11,8 @@ class TaskClass{
 
         TaskClass(int p, string s);
         bool operator>(const TaskClass& other) const;
+        bool operator<(const TaskClass& other) const;
+        bool operator==(const TaskClass& other) const;
 };
 
 #endif

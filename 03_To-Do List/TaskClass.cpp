@@ -12,3 +12,13 @@ TaskClass::TaskClass(int p, string s){
 bool TaskClass::operator>(const TaskClass& other) const{
     return this->priority > other.priority;
 }
+
+// Overload the < operator to create a greater than function between instances
+bool TaskClass::operator<(const TaskClass& other) const{
+    return this->priority < other.priority;
+}
+
+// Overload the > operator to create a greater than function between instances
+bool TaskClass::operator==(const TaskClass& other) const{
+    return this->priority == other.priority;
+}
